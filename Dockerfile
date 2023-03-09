@@ -1,4 +1,4 @@
-FROM nginx:1.23
+FROM registry.cn-hangzhou.aliyuncs.com/kangcun/ynginx:1.23
 
 RUN apt-get update && \
     apt-get install -y wget gcc  make libpcre3 libpcre3-dev openssl  libssl-dev  && \
