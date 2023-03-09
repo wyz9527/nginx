@@ -1,7 +1,7 @@
 FROM registry.cn-hangzhou.aliyuncs.com/kangcun/ynginx:1.23
 
 RUN apt-get update && \
-    apt-get install -y wget gcc make libpcre3 libpcre3-dev openssl && \
+    apt-get install -y wget gcc make libpcre3 libpcre3-dev openssl openssl-devel && \
     wget http://nginx.org/download/nginx-1.23.3.tar.gz && \
     tar -xzvf nginx-1.23.3.tar.gz && \
     cd nginx-1.23.3 && \
